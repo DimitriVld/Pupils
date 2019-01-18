@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#home {
+  height: 100vh;
+  background-color: #E6E8EC;
+  font-family: sans-serif;
+}
+
+#home h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: #355CC2;
+  box-shadow: 0px 2px 4px 0px #000;
+}
+
+#home #form {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  display: none;
+}
+
+#form #formAdd {
+  background-color: #E6E8EC;
+  margin: 25vh auto;
+  padding: 20px 40px;
+  border: 1px solid #888;
+  border-radius: 2%;
+  width: 25%;
+}
+
+#home #formAdd input[type=text] {
+  border-radius: 2%;
+  border: none;
+  height: 20px;
+  width: 100%;
+  padding: 12px 4px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#home #formAdd input[type=text]::placeholder {
+  color: #999;
+}
+
+#home #formAdd label {
+  font-size: 10px;
+  font-weight: 800;
+  color: #393953;
+}
+
+#home #formAdd .buttonForm {
+  display: block;
+  border: none;
+  border-radius: 8%;
+  color: #fff;
+  padding: 5px 30px;
+  margin: auto;
+  background: #355CC2;
+  box-shadow: 0px 2px 4px 0px #000;
+}
+
+/**** FORM 2 ****/
+
+#home #form2 {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  display: none;
+}
+
+#form2 #formAdd2 {
+  background-color: #E6E8EC;
+  margin: 25vh auto;
+  padding: 20px 40px;
+  border: 1px solid #888;
+  border-radius: 2%;
+  width: 25%;
+}
+
+#home #formAdd2 input[type=text] {
+  border-radius: 2%;
+  border: none;
+  height: 20px;
+  width: 100%;
+  padding: 12px 4px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#home #formAdd2 input[type=text]::placeholder {
+  color: #999;
+}
+
+#home #formAdd2 label {
+  font-size: 10px;
+  font-weight: 800;
+  color: #393953;
+}
+
+#home #formAdd2 .buttonForm {
+  display: block;
+  border: none;
+  border-radius: 8%;
+  color: #fff;
+  padding: 5px 30px;
+  margin: auto;
+  background: #355CC2;
+  box-shadow: 0px 2px 4px 0px #000;
+}
+
+#home .student {
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0px 2px 4px 0px #000;
+  height: 8em;
+  width: 8em;
+  margin: 10px;
+}
+
+#home .addStudent {
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0px 2px 4px 0px #000;
+  height: 8em;
+  width: 8em;
+  margin: 10px;
+  cursor: pointer;
+}
