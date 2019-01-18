@@ -85,6 +85,11 @@ table {
   display: inline-block;
 }
 
+#home #list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #home .student {
   background-color: #fff;
   display: flex;
@@ -93,9 +98,14 @@ table {
   box-shadow: 0px 2px 4px 0px #000;
   height: 18em;
   width: 14em;
-  margin: 10px 40px;
+  margin: 10px 0 10px 40px;
   border-radius: 2%;
   padding: 10px;
+}
+
+
+#home .student a {
+  margin: 15px;
 }
 
 #home .student .name {

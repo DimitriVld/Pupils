@@ -14,6 +14,11 @@ class List extends Component {
         }
     }
     
+    addModal = () => {
+        const modalForm = document.getElementById("form");
+    
+        modalForm.style.display = "initial";
+      }
 
     updateUser = (user) => {
 
@@ -71,6 +76,12 @@ class List extends Component {
                     </form>
                 </div>
                 <ul>
+                    <li>
+                        <div className="addStudent" onClick={() => this.addModal()}>
+                            <img src="/assets/img/add.png" alt="**"/>
+                            <p>Add new Pupil</p>
+                        </div>
+                    </li>
                     {this.props.students.length ? this.props.students.map((students) => (
                         <li className="student" key={students._id}>
                             <div className="button-delete" onClick={() => this.delete(students._id)}>
@@ -78,8 +89,8 @@ class List extends Component {
                             </div>
                             <p className="name">{students.firstName} {students.lastName}</p>
                             <p>
-                                <a href="mailto:{students.emailStudent}"><img src="../../assets/img/email.png" alt="**"/></a>
-                                <a href={students.githubStudent} target="_blank"><img src="../../assets/img/github.png" alt="**"/></a>
+                                <a href="mailto:{students.emailStudent}"><img src="./../../assets/img/email.png" alt="**"/></a>
+                                <a href={students.githubStudent} target="_blank"><img src="./../../assets/img/github.png" alt="**"/></a>
                             </p>
                             <button type="button" data-toggle="modal" className="button-edit"onClick={() => this.updateUser(students)}>Edit</button>
                         </li>
