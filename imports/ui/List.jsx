@@ -52,7 +52,7 @@ class List extends Component {
 
     render() {
         return (
-            <div id="List">
+            <div id="list">
                 <div id="form2">
                     <form name="updateForm" id="formAdd2" onSubmit={ this.edit }>
                         <label className="name">Prénom</label>
@@ -73,12 +73,17 @@ class List extends Component {
                 <ul>
                     {this.props.students.length ? this.props.students.map((students) => (
                         <li className="student" key={students._id}>
-                            <button type="button" onClick={() => this.delete(students._id)}>Delete</button>
-                            <p>Prenom : {students.firstName}</p>
-                            <p>Nom : {students.lastName}</p>
-                            <button type="button" data-toggle="modal" onClick={() => this.updateUser(students)}>Edit</button>
+                            <div className="button-delete" onClick={() => this.delete(students._id)}>
+                                <img src="../../assets/img/delete.png" alt="**"/>
+                            </div>
+                            <p className="name">{students.firstName} {students.lastName}</p>
+                            <p>
+                                <a href="mailto:{students.emailStudent}"><img src="../../assets/img/email.png" alt="**"/></a>
+                                <a href={students.githubStudent} target="_blank"><img src="../../assets/img/github.png" alt="**"/></a>
+                            </p>
+                            <button type="button" data-toggle="modal" className="button-edit"onClick={() => this.updateUser(students)}>Edit</button>
                         </li>
-                    )): <p>Not student</p>}
+                    )): <p></p>}
                 </ul>
             </div>
         )

@@ -56,6 +56,68 @@ table {
   box-shadow: 0px 2px 4px 0px #000;
 }
 
+#home .add-list {
+  display: flex;
+}
+
+#home .addStudent {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px 0px #000;
+  height: 284px;
+  width: 14em;
+  margin: 10px 0 10px 40px;
+  cursor: pointer;
+  border: 2px dashed #355CC2;
+  border-radius: 2%;
+  padding: 10px;
+}
+
+#home .addStudent img,
+#home .addStudent p {
+  margin: auto;
+}
+
+/** List student **/
+
+#home #list {
+  display: inline-block;
+}
+
+#home .student {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px #000;
+  height: 18em;
+  width: 14em;
+  margin: 10px 40px;
+  border-radius: 2%;
+  padding: 10px;
+}
+
+#home .student .name {
+  margin: 10em 0 1em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#home .student .button-edit {
+  border: none;
+  color: #fff;
+  background: #355CC2;
+  box-shadow: 0px 2px 4px 0px #000;
+  padding: 5px 30px;
+  margin: 25px auto 5px;
+  border-radius: 8%;
+}
+
+#home .student .button-delete {
+  text-align: end;
+}
+
 #home #form {
   position: absolute;
   top: 0;
@@ -110,6 +172,7 @@ table {
 #home #form2 {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 1000;
   height: 100vh;
   width: 100%;
@@ -154,23 +217,4 @@ table {
   margin: auto;
   background: #355CC2;
   box-shadow: 0px 2px 4px 0px #000;
-}
-
-#home .student {
-  background-color: #fff;
-  display: inline-block;
-  box-shadow: 0px 2px 4px 0px #000;
-  height: 8em;
-  width: 8em;
-  margin: 10px;
-}
-
-#home .addStudent {
-  background-color: #fff;
-  display: inline-block;
-  box-shadow: 0px 2px 4px 0px #000;
-  height: 8em;
-  width: 8em;
-  margin: 10px;
-  cursor: pointer;
 }

@@ -5,6 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import students from "../api/students";
 
 class Home extends Component {
+  
 
   addModal = () => {
     const modalForm = document.getElementById("form");
@@ -17,8 +18,13 @@ class Home extends Component {
       <section id="home">
         <h1>.PUPILS</h1>
         <Form />
-        <div className="addStudent" onClick={() => this.addModal()}>Add</div>
-        <List {...this.props}/>
+        <div className="add-list">
+          <div className="addStudent" onClick={() => this.addModal()}>
+            <img src="../../assets/img/add.png" alt="**"/>
+            <p>Add new Pupil</p>
+          </div>
+          <List {...this.props}/>
+        </div>
       </section>
     );
   }
@@ -31,20 +37,3 @@ const App = withTracker(() => {
 })(Home);
 
 export default App;
-
-
-/*import Form from './Form';
-import List from './List';
-import { Students } from '../api/students';
-
-
-const App = () => (
-  <div>
-    <h1>Student List</h1>
-    <Form />
-    <List />
-  </div>
-);
-
-export default App;
-<pre>DB Stuff: {JSON.stringify(this.props, null, ' ')} </pre>*/
